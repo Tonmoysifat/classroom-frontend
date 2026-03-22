@@ -61,9 +61,7 @@ function App() {
                   <Route path="subjects">
                     <Route index element={<SubjectsList/>}/>
                     <Route path="create" element={<SubjectsCreate/>}/>
-
                   </Route>
-
                 </Route>
               </Routes>
               <Toaster/>
