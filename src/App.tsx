@@ -17,6 +17,8 @@ import {BookOpen, Home} from "lucide-react";
 import {Layout} from "@/components/refine-ui/layout/layout.tsx";
 import SubjectsList from "@/pages/subjects/list.tsx";
 import SubjectsCreate from "@/pages/subjects/create.tsx";
+// import dataProvider from "@refinedev/simple-rest";
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
           <DevtoolsProvider>
             <Refine
               dataProvider={dataProvider}
+              // dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
               notificationProvider={useNotificationProvider()}
               routerProvider={routerProvider}
               options={{
